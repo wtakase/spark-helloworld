@@ -7,5 +7,6 @@ object HelloWorld {
   def main(args: Array[String]): Unit = {
     val sc = new SparkContext(new SparkConf().setAppName("Hello World"))
     println("Hello World!")
+    sc.stop()
   }
 }
